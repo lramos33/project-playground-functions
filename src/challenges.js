@@ -8,29 +8,29 @@ function compareTrue(a, b) {
 
 // Desafio 2
 function calcArea(base, altura) {
-  let area = (base*altura)/2;
-  return area
+  let area = (base * altura) / 2;
+  return area;
 }
 
 // Desafio 3
 function splitSentence(string) {
   let array = string.split(' ');
-  return array
+  return array;
 }
 
 // Desafio 4
 function concatName(array) {
   let espaco = ', ';
   let resultado = array[array.length - 1].concat(espaco, array[0]);
-  return resultado
+  return resultado;
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  let somaWins = wins*3;
-  let somaTies = ties*1
+  let somaWins = wins * 3;
+  let somaTies = ties * 1;
   let contador = somaWins + somaTies;
-  return contador
+  return contador;
 }
 
 // Desafio 6
