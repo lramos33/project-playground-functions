@@ -56,13 +56,12 @@ function catAndMouse(mouse, cat1, cat2) {
   let pos1 = Math.abs(cat1 - mouse);
   let pos2 = Math.abs(cat2 - mouse);
   if (pos1 > pos2) {
-    var resultado = 'cat2';
+    return 'cat2';
   } else if (pos2 > pos1) {
-    var resultado = 'cat1';
+    return 'cat1';
   } else {
-    var resultado = 'os gatos trombam e o rato foge';
+    return 'os gatos trombam e o rato foge';
   }
-  return resultado;
 }
 
 // Desafio 8
@@ -70,7 +69,7 @@ function fizzBuzz(array) {
   let resultado = [];
   for (let i = 0; i < array.length; i += 1) {
     if (array[i] % 3 === 0 && array[i] % 5 === 0) {
-      resultado.push('fizzBuzz');  
+      resultado.push('fizzBuzz'); 
     } else if (array[i] % 5 === 0) {
       resultado.push('buzz');
     } else if (array[i] % 3 === 0) {
