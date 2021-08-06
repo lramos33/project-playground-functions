@@ -59,8 +59,8 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'cat2';
   } else if (pos2 > pos1) {
     return 'cat1';
-  } 
-    return 'os gatos trombam e o rato foge';
+  }
+  return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
@@ -82,41 +82,41 @@ function fizzBuzz(array) {
 
 // Desafio 9
 function encode(string) {
-  encodeString = '';
+  let encodeString = '';
   for (let i = 0; i < string.length; i += 1) {
-  if (string[i] === 'a') {
-    encodeString = encodeString + '1';
-  } else if (string[i] === 'e') {
-    encodeString = encodeString + '2';
-  } else if (string[i] === 'i') {
-    encodeString = encodeString + '3';
-  } else if (string[i] === 'o') {
-    encodeString = encodeString + '4';
-  } else if (string[i] === 'u') {
-    encodeString = encodeString + '5';
-  } else {
-  encodeString = encodeString + string[i];
-  }
+    if (string[i] === 'a') {
+      encodeString = encodeString + '1';
+    } else if (string[i] === 'e') {
+      encodeString = encodeString + '2';
+    } else if (string[i] === 'i') {
+      encodeString = encodeString + '3';
+    } else if (string[i] === 'o') {
+      encodeString = encodeString + '4';
+    } else if (string[i] === 'u') {
+      encodeString = encodeString + '5';
+    } else {
+      encodeString = encodeString + string[i];
+    }
   }
   return encodeString;
 }
 
 function decode(string) {
-  decodeString = '';
+  let decodeString = '';
   for (let i = 0; i < string.length; i += 1) {
-  if (string[i] === '1') {
-    decodeString = decodeString + 'a';
-  } else if (string[i] === '2') {
-    decodeString = decodeString + 'e';
-  } else if (string[i] === '3') {
-    decodeString = decodeString + 'i';
-  } else if (string[i] === '4') {
-    decodeString = decodeString + 'o';
-  } else if (string[i] === '5') {
-    decodeString = decodeString + 'u';
-  } else {
-  decodeString = decodeString + string[i];
-  }
+    if (string[i] === '1') {
+      decodeString = decodeString + 'a';
+    } else if (string[i] === '2') {
+      decodeString = decodeString + 'e';
+    } else if (string[i] === '3') {
+      decodeString = decodeString + 'i';
+    } else if (string[i] === '4') {
+      decodeString = decodeString + 'o';
+    } else if (string[i] === '5') {
+      decodeString = decodeString + 'u';
+    } else {
+      decodeString = decodeString + string[i];
+    }
   }
   return decodeString;
 }
