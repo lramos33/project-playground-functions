@@ -11,8 +11,8 @@ function techList(tech, name) {
     let object = {
       tech: tech[i],
       name: name
-    }
-    output.push(object)
+    };
+    output.push(object);
   }
   return output;
 }
