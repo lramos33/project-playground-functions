@@ -21,23 +21,22 @@ function techList(tech, name) {
 function generatePhoneNumber(number) {
   let phoneNumber = '(';
   let repeated = number;
-  var counter = 0;
 
   //Condição 1
-  if (number.length != 11) {
+  if (number.length !== 11) {
     return 'Array com tamanho incorreto.';
   }
 
   //Condição 2
   for (let i = 0; i < number.length; i += 1) {
-    if (number[i] < 0 || number [i] > 9) {
+    if (number[i] < 0 || number[i] > 9) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
   }
 
   //Condição 3
   for (let i = 0; i < number.length; i += 1) {
-    counter = 0;
+    let counter = 0;
     for (let i2 = 0; i2 < repeated.length; i2 += 1) {
       if (number[i] === repeated[i2]) {
         counter += 1;
