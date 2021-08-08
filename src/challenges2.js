@@ -46,20 +46,20 @@ function generatePhoneNumber(number) {
       }
     }
   }
-  
+
   // Resultado
   for (let i = 0; i < 2; i += 1) {
-    phoneNumber = phoneNumber + number[i];
+    phoneNumber += number[i];
   }
-  phoneNumber = phoneNumber + ') ';
+  phoneNumber += ') ';
   
   for (let i = 2; i < 7; i += 1) {
-    phoneNumber = phoneNumber + number[i];
+    phoneNumber += number[i];
   }
-  phoneNumber = phoneNumber + '-';
+  phoneNumber += '-';
 
   for (let i = 7; i < number.length; i += 1) {
-    phoneNumber = phoneNumber + number[i];
+    phoneNumber += number[i];
   }
   return phoneNumber;
 }
