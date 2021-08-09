@@ -57,7 +57,7 @@ function generatePhoneNumber(number) {
     phoneNumber += number[i];
   }
   phoneNumber += '-';
-
+  
   for (let i = 7; i < number.length; i += 1) {
     phoneNumber += number[i];
   }
@@ -70,8 +70,19 @@ function triangleCheck() {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(drinks) {
+  
+  let glasses = drinks.match(/\d+/g);
+  let totalGlasses = 0;
+  
+  for (let i = 0; i < glasses.length; i += 1) {
+    totalGlasses += parseInt(glasses[i]);
+  }
+
+  if (totalGlasses > 1) {
+    return totalGlasses + ' copos de água';
+  }
+  return totalGlasses + ' copo de água';
 }
 
 module.exports = {
