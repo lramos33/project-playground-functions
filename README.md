@@ -145,7 +145,7 @@ Neste projeto foi desenvolvido funções seguindo os requisitos especificados pa
 ##
 
 <div align="center">
-  <img src="https://shields.io/github/repo-size/lramos33/REPOSITORIO">
-  <img src="https://shields.io/github/languages/top/lramos33/REPOSITORIO">
-  <img src="https://shields.io/github/last-commit/lramos33/REPOSITORIO">
+  <img src="https://shields.io/github/repo-size/lramos33/project-playground-functions">
+  <img src="https://shields.io/github/languages/top/lramos33/project-playground-functions">
+  <img src="https://shields.io/github/last-commit/lramos33/project-playground-functions">
 </div>
